@@ -4,7 +4,7 @@ const sequelize = require('../../../config/db')
 const Order = sequelize.define('Order', {
 
     product_ids: {
-        type: DataTypes.ARRAY(DataTypes.INTEGER),
+        type: DataTypes.ARRAY(DataTypes.ARRAY(DataTypes.INTEGER)),
         allowNull: true,
     },
     username: {

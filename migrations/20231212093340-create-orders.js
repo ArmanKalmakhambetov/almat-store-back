@@ -10,8 +10,8 @@ module.exports = {
                 type: Sequelize.INTEGER,
             },
             product_ids: {
-                type: Sequelize.ARRAY(Sequelize.INTEGER),
-                allowNull: true,
+                type: Sequelize.ARRAY(Sequelize.ARRAY(Sequelize.INTEGER)),
+                allowNull: true
             },
             username: {
                 type: Sequelize.STRING,
